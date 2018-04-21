@@ -35,6 +35,8 @@ class Controller {
 
             var results = $('#results');
             results.text("Atk army is alive? " + atk_army.isAlive() + ".\nDef army is alive? " + def_army.isAlive());
+
+            console.log("Atk wins? " + atk_army.attack(def_army));
         };
 
     }
