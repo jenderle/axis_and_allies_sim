@@ -5,7 +5,7 @@ class Controller {
         $().ready(function () {
             self.onLoad();
         });
-    } // end constructor
+    }
     
     onLoad() {
         self = this;
@@ -29,14 +29,18 @@ class Controller {
             var def_tnk = $("#def_tnk").val();
             var def_ftr = $("#def_ftr").val();
             var def_bmb = $("#def_bmb").val();
+
+            var atk_wins = 0;
+            for(var i=0; i<100000; i++) {
+                var atk_army = new Army(atk_inf, atk_art, atk_tnk, atk_ftr, atk_bmb);
+                var def_army = new Army(def_inf, def_art, def_tnk, def_ftr, def_bmb);
+                if(atk_army.attack(def_army)) {
+                    atk_wins++;
+                }
+            }
             
-            var atk_army = new Army(atk_inf, atk_art, atk_tnk, atk_ftr, atk_bmb);
-            var def_army = new Army(def_inf, def_art, def_tnk, def_ftr, def_bmb);
-
             var results = $('#results');
-            results.text("Atk army is alive? " + atk_army.isAlive() + ".\nDef army is alive? " + def_army.isAlive());
-
-            console.log("Atk wins? " + atk_army.attack(def_army));
+            results.text("Attackers win " + (atk_wins / 100000 * 100) + "% of the battles.");
         };
 
     }

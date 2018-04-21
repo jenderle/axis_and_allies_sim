@@ -1,7 +1,6 @@
 
-.text {
+body {
     margin:40px auto;
-    max-width:650px;
     line-height:1.6;
     font-size:18px;
     color:#444;
@@ -12,7 +11,30 @@ h1,h2,h3{
     line-height:1.2
 }
 
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.focus {
+  font: 2em;
+  color: #EEEEEE;
+}
+
+.header {
+  background-color: #6182B8;
+}
+
+.footer {
+  background-color: #E53935;
+}
+
+.menu {
+  background-color: #252526;
+}
+
+/*
 .container > div {
     display: flex;
     justify-content: center;
@@ -41,3 +63,4 @@ html, body {
 .container > div:nth-child(4n) {
       background-color: #ffcc5c;
 }
+*/
