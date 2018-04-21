@@ -1,4 +1,4 @@
-
+/* TEXT STYLES */
 body {
     margin:40px auto;
     line-height:1.6;
@@ -10,6 +10,38 @@ body {
 
 h1,h2,h3{
     line-height:1.2
+}
+
+
+/* LINK STYLES */
+a:link {
+  color: #252526;
+}
+
+a:visited {
+  color: #252526;
+}
+
+a:hover {
+  color: #252526;
+}
+
+a:active {
+  color: #EEEEEE;
+}
+
+/* BUTTON STYLES */
+.run-button {
+  padding: 10px 24px;
+  cursor: pointer;
+  background-color: #EEEEEE;
+  border: 2px solid #E53935;
+  border-radius: 12px;
+  color: #E53935;
+  margin: 5px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .menu-button {
@@ -24,38 +56,7 @@ h1,h2,h3{
   width: 150px;
 }
 
-a:link {
-  color: #252526;
-}
-
-/* visited link */
-a:visited {
-  color: #252526;
-}
-
-/* mouse over link */
-a:hover {
-  color: #252526;
-}
-
-/* selected link */
-a:active {
-  color: #EEEEEE;
-}
-
-.run-button {
-  padding: 10px 24px;
-  cursor: pointer;
-  background-color: #EEEEEE;
-  border: 2px solid #E53935;
-  border-radius: 12px;
-  color: #E53935;
-  margin: 5px;
-  width: 200px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
+/* FLEXBOX COMPONENT STYLES */
 .container > div {
     display: flex;
     justify-content: center;

@@ -40,8 +40,16 @@ class Controller {
             }
             
             var results = $('#results');
-            results.text("Attackers win " + (atk_wins / 100000 * 100) + "% of the battles.");
+            results.text("Attackers win " + precisionRound((atk_wins / 100000 * 100), 0) + "% of the battles.");
         };
+
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
+		// number: number to round
+		// precision: number of digits to round to
+		function precisionRound(number, precision) {
+			var factor = Math.pow(10, precision);
+			return Math.round(number * factor) / factor;
+		}
 
     }
 
