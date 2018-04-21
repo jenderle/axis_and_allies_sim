@@ -16,27 +16,56 @@
                 <div class="porthole"> <!-- root container for UI -->
                     <div class="attackers"> <!-- attackers column -->
                         <div>ATTACKERS</div> 
-                        <div>Infantry</div>
-                        <div>Artillery</div>
-                        <div>Tanks</div>
-                        <div>Fighters</div>
-                        <div>Bombers</div>
+                        <div>
+                            <label for="atk_inf">Infantry:</label>
+                            <input id="atk_inf" type="number" name="atk_inf" value="0">
+                        </div>
+                        <div>
+                            <label for="atk_art">Artillery:</label>
+                            <input id="atk_art" type="number" name="atk_art" value="0">
+                        </div>
+                        <div>
+                            <label for="atk_tnk">Tanks:</label>
+                            <input id="atk_tnk" type="number" name="atk_tnk" value="0">
+                        </div>
+                        <div>
+                            <label for="atk_ftr">Fighters:</label>
+                            <input id="atk_ftr" type="number" name="atk_ftr" value="0">
+                        </div>
+                        <div>
+                            <label for="atk_bmr">Bombers:</label>
+                            <input id="atk_bmr" type="number" name="atk_bmr" value="0">
+                        </div>
                     </div>
                     <div class="sim"> <!-- sim column -->
                         <div>LAND BATTLE</div> 
-                        <div>Run Simulation</div>
+                        <button type="button">Run Simulation</button>
                         <div>Results:</div>
-                        <div>Nothing to show...</div>
+                        <div id="results">Nothing to show...</div>
                     </div>
-                    <div class="defenders">
-                        <div>ATTACKERS</div> 
-                        <div>Infantry</div>
-                        <div>Artillery</div>
-                        <div>Tanks</div>
-                        <div>Fighters</div>
-                        <div>Bombers</div>
+                    <div class="defenders"> <!-- defenders column -->
+                        <div>DEFENDERS</div> 
+                        <div>
+                            <label for="atk_inf">Infantry:</label>
+                            <input id="atk_inf" type="number" name="atk_inf" value="0">
+                        </div>
+                        <div>
+                            <label for="atk_art">Artillery:</label>
+                            <input id="atk_art" type="number" name="atk_art" value="0">
+                        </div>
+                        <div>
+                            <label for="atk_tnk">Tanks:</label>
+                            <input id="atk_tnk" type="number" name="atk_tnk" value="0">
+                        </div>
+                        <div>
+                            <label for="atk_ftr">Fighters:</label>
+                            <input id="atk_ftr" type="number" name="atk_ftr" value="0">
+                        </div>
+                        <div>
+                            <label for="atk_bmr">Bombers:</label>
+                            <input id="atk_bmr" type="number" name="atk_bmr" value="0">
+                        </div>
                     </div>
-
                 </div>
             </div>
             <div class="footer">FOOTER</div>
