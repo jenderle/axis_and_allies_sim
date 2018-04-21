@@ -20,9 +20,24 @@ class Army {
             this.inf = this.inf - 1;
         }
 
-        if(hits > 0 && this.art > 0) {
+        while(hits > 0 && this.art > 0) {
             hits = hits - 1;
             this.art = this.art - 1;
+        }
+
+        while(hits > 0 && this.tnk > 0) {
+            hits = hits - 1;
+            this.tnk = this.tnk - 1;
+        }
+
+        while(hits > 0 && this.ftr > 0) {
+            hits = hits - 1;
+            this.ftr = this.ftr - 1;
+        }
+
+        while(hits > 0 && this.bmb > 0) {
+            hits = hits - 1;
+            this.bmb = this.bmb - 1;
         }
 
         return this.isAlive();

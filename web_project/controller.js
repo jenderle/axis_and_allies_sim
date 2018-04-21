@@ -31,10 +31,10 @@ class Controller {
             var def_bmb = $("#def_bmb").val();
             
             var atk_army = new Army(atk_inf, atk_art, atk_tnk, atk_ftr, atk_bmb);
-            console.log("Atk army is alive? " + atk_army.isAlive());
-            
+            var def_army = new Army(def_inf, def_art, def_tnk, def_ftr, def_bmb);
+
             var results = $('#results');
-            results.text("Attackers have " + atk_inf + " infantry. Defenders have " + def_inf + " infantry.")
+            results.text("Atk army is alive? " + atk_army.isAlive() + ".\nDef army is alive? " + def_army.isAlive());
         };
 
     }
