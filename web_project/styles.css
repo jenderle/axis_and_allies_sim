@@ -12,11 +12,49 @@ h1,h2,h3{
     line-height:1.2
 }
 
-button {
+.menu-button {
   display: block;
+  padding: 10px 24px;
+  cursor: pointer;
+  background-color: #252526;
+  border: 2px solid #EEEEEE;
+  border-radius: 12px;
+  color: #EEEEEE;
+  margin: 5px;
+  width: 150px;
 }
 
+a:link {
+  color: #252526;
+}
 
+/* visited link */
+a:visited {
+  color: #252526;
+}
+
+/* mouse over link */
+a:hover {
+  color: #252526;
+}
+
+/* selected link */
+a:active {
+  color: #EEEEEE;
+}
+
+.run-button {
+  padding: 10px 24px;
+  cursor: pointer;
+  background-color: #EEEEEE;
+  border: 2px solid #E53935;
+  border-radius: 12px;
+  color: #E53935;
+  margin: 5px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+}
 
 .container > div {
     display: flex;
@@ -41,33 +79,14 @@ button {
   background-color: #252526;
 }
 
-/*
-.container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    color: #ffeead;
+.unit-input-block  {
+  display: table;
 }
 
-html, body {
-  background-color: #ffeead;
-  margin: 10px;
+.unit-input-row {
+  display: table-row;
 }
 
-.container > div:nth-child(1n) {
-  background-color: #96ceb4;	
+.unit-input-cell {
+  display: table-cell;
 }
-
-.container > div:nth-child(3n) {
-  background-color: #88d8b0;
-}
-
-.container > div:nth-child(2n) {
-      background-color: #ff6f69;
-}
-
-.container > div:nth-child(4n) {
-      background-color: #ffcc5c;
-}
-*/
