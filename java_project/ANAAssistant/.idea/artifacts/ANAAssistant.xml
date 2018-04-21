@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="ANAAssistant">
+    <output-path>$PROJECT_DIR$/out/artifacts/ANAAssistant</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="ANAAssistant" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="Aide-de-camp" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="ANAAssistant.jar">
+        <element id="module-output" name="ANAAssistant" />
+      </element>
+    </root>
+  </artifact>
+</component>
