@@ -7,6 +7,11 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="container.css">
         <link rel="stylesheet" href="porthole.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="controller.js"></script>
+        <script>
+            var controller = new Controller();
+        </script>
     </head>
     <body>
         <div class="container">
@@ -39,7 +44,7 @@
                     </div>
                     <div class="sim"> <!-- sim column -->
                         <div>LAND BATTLE</div> 
-                        <button type="button">Run Simulation</button>
+                        <button id="run" type="button">Run Simulation</button>
                         <div>Results:</div>
                         <div id="results">Nothing to show...</div>
                     </div>
